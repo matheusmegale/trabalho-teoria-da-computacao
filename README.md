@@ -42,6 +42,7 @@ Requisição:
 Resposta:
 
 ![image](https://github.com/user-attachments/assets/2e0924f4-4336-4b1c-921a-c82e4f269d81)
+
 As informações da máquina (estados, trasições, etc) serão exibidas acima dessa resposta.
 
 
@@ -76,6 +77,7 @@ Requisição:
 Resposta:
 
 ![image](https://github.com/user-attachments/assets/c0e3829d-a368-484d-9a04-9a4eea984672)
+
 As informações da máquina (estados, trasições, etc) serão exibidas acima dessa resposta.
 
 
@@ -117,6 +119,7 @@ Requisição:
 Resposta:
 
 ![image](https://github.com/user-attachments/assets/dca6f842-6c66-4ee1-ad0e-f2c2fb093221)
+
 As informações da máquina (estados, trasições, etc) serão exibidas acima dessa resposta.
 
 ⚠️ Nota: Máquinas de Turing não geram diagramas visuais.
