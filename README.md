@@ -1,6 +1,6 @@
 <h1>Trabalho de Teoria da Computação</h1>
 
-Este projeto implementa autômatos finitos determinísticos (DFA), autômatos com pilha (DPDA) e máquinas de Turing (TM) utilizando FastAPI para expor uma API que permite testar e visualizar esses autômatos.
+Este projeto implementa autômatos finitos determinísticos (DFA), autômatos com pilha (DPDA) e máquinas de Turing (TM) utilizando FastAPI para expor uma API que permite testar e visualizar esses autômatos. 
 
 <h2>🚀 Configuração e Execução do Projeto</h2>
 
@@ -26,6 +26,8 @@ fastapi dev main.py
 ```
 
 A API estará disponível em http://127.0.0.1:8000 e a documentação interativa pode ser acessada em http://127.0.0.1:8000/docs.
+
+Nota: a visualização dos autômatos só será possível em http://127.0.0.1:8000. 
 
 <h2>📌 Exemplos de Uso da API</h2>
 
