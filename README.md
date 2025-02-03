@@ -4,32 +4,14 @@ Este projeto implementa autômatos finitos determinísticos (DFA), autômatos co
 
 🚀 Configuração e Execução do Projeto
 
-1️⃣ Pré-requisitos
+1️⃣ Install Dependencies
 
-Antes de executar o projeto, certifique-se de ter instalado:
+Make sure you have Python 3.8+ installed. Run:
+pip install fastapi automata
 
-Python 3.9+
+2️⃣ Start the API
 
-Pip
-
-Virtualenv (opcional, mas recomendado)
-
-2️⃣ Instalação
-
-Clone o repositório e instale as dependências:
-# Clone o repositório
-git clone https://github.com/matheusmegale/trabalho-teoria-da-computacao.git
-cd trabalho-teoria-da-computacao
-
-# Crie um ambiente virtual (opcional)
-python -m venv venv
-source venv/bin/activate  # No Windows, use: venv\Scripts\activate
-
-# Instale as dependências
-pip install -r requirements.txt
-
-3️⃣ Executando a API
-uvicorn main:app --reload
+fastapi dev main.py
 
 A API estará disponível em http://127.0.0.1:8000 e a documentação interativa pode ser acessada em http://127.0.0.1:8000/docs.
 
@@ -38,7 +20,7 @@ A API estará disponível em http://127.0.0.1:8000 e a documentação interativa
 1️⃣ Testando um DFA
 
 Requisição:
-
+```json
 {
   "states": ["q0", "q1", "q2"],
   "input_symbols": ["0", "1"],
@@ -51,6 +33,7 @@ Requisição:
   "final_states": ["q1"],
   "input": "00011111"
 }
+```
 
 Resposta:
 
@@ -93,3 +76,60 @@ Resposta:
   "Will this input be accepted? ->": true,
   "diagram_path": "/static/dpda_diagram.png"
 }
+
+3️⃣ Testando uma Máquina de Turing
+
+Requisição:
+```json
+{
+    "states": ["q0", "q1", "q2", "q3", "q4"],
+    "input_symbols": ["0", "1"],
+    "tape_symbols": ["0", "1", "x", "y", "."],
+    "transitions": {
+        "q0": {
+            "0": ["q1", "x", "R"],
+            "y": ["q3", "y", "R"]
+        },
+        "q1": {
+            "0": ["q1", "0", "R"],
+            "1": ["q2", "y", "L"],
+            "y": ["q1", "y", "R"]
+        },
+        "q2": {
+            "0": ["q2", "0", "L"],
+            "x": ["q0", "x", "R"],
+            "y": ["q2", "y", "L"]
+        },
+        "q3": {
+            "y": ["q3", "y", "R"],
+            ".": ["q4", ".", "R"]
+        }
+    },
+    "initial_state": "q0",
+    "blank_symbol": ".",
+    "final_states": ["q4"],
+		"input": "000111"
+}
+```
+
+Resposta:
+
+{
+  "Will this input be accepted? ->": true
+}
+
+⚠️ Nota: Máquinas de Turing não geram diagramas visuais.
+
+⚠️ Limitações e Pressupostos
+
+✅ O que funciona:
+
+Implementação de DFA, DPDA e DTM
+
+Geração de diagramas para DFA e DPDA
+
+Validação de entrada na API via Pydantic
+
+❌ Limitações:
+
+A biblioteca Automata não suporta diagramas para Máquinas de Turing.
