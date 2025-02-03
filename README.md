@@ -41,10 +41,8 @@ Requisição:
 
 Resposta:
 
-{
-  "Will this input be accepted? ->": true,
-  "diagram_path": "/static/dfa_diagram.png"
-}
+![image](https://github.com/user-attachments/assets/2e0924f4-4336-4b1c-921a-c82e4f269d81)
+
 
 <h3>2️⃣ Testando um DPDA</h3>
 
