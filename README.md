@@ -9,6 +9,12 @@ Este projeto implementa autômatos finitos determinísticos (DFA), autômatos co
 Certifique-se de que você tem o Python 3.8+ instalado. Execute:
 ```sh
 pip install fastapi automata
+
+pip install automata-lib
+
+pip install 'automata-lib[visual]'
+
+pip install "fastapi[standard]"
 ```
 
 2️⃣ Inicie a API
