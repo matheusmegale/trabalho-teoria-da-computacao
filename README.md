@@ -4,14 +4,18 @@ Este projeto implementa autômatos finitos determinísticos (DFA), autômatos co
 
 🚀 Configuração e Execução do Projeto
 
-1️⃣ Install Dependencies
+1️⃣ Instale as dependências
 
-Make sure you have Python 3.8+ installed. Run:
+Certifique-se de que você tem o Python 3.8+ instalado. Execute:
+```sh
 pip install fastapi automata
+```
 
 2️⃣ Start the API
 
+```sh
 fastapi dev main.py
+```
 
 A API estará disponível em http://127.0.0.1:8000 e a documentação interativa pode ser acessada em http://127.0.0.1:8000/docs.
 
