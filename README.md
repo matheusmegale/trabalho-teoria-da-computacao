@@ -11,7 +11,7 @@ Certifique-se de que você tem o Python 3.8+ instalado. Execute:
 pip install fastapi automata
 ```
 
-2️⃣ Start the API
+2️⃣ Inicie a API
 
 ```sh
 fastapi dev main.py
