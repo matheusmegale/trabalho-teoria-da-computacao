@@ -23,6 +23,8 @@ A API estará disponível em http://127.0.0.1:8000 e a documentação interativa
 
 <h3>1️⃣ Testando um DFA</h3>
 
+DFA que aceita palavras que terminam em um número ímpar de '1's
+
 Requisição:
 ```json
 {
@@ -47,6 +49,8 @@ As informações da máquina (estados, trasições, etc) serão exibidas acima d
 
 
 <h3>2️⃣ Testando um DPDA</h3>
+
+DPDA que combina zero ou mais 'a's, seguidos pelo mesmo número de 'b's
 
 Requisição:
 ```json
@@ -82,6 +86,8 @@ As informações da máquina (estados, trasições, etc) serão exibidas acima d
 
 
 <h3>3️⃣ Testando uma Máquina de Turing</h3>
+
+DTM que combina todas as cadeias que começam com '0's, seguidas pelo mesmo número de '1's
 
 Requisição:
 ```json
