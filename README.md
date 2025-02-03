@@ -1,8 +1,8 @@
-Trabalho de Teoria da Computação
+<h1>Trabalho de Teoria da Computação</h1>
 
 Este projeto implementa autômatos finitos determinísticos (DFA), autômatos com pilha (DPDA) e máquinas de Turing (TM) utilizando FastAPI para expor uma API que permite testar e visualizar esses autômatos.
 
-🚀 Configuração e Execução do Projeto
+<h2>🚀 Configuração e Execução do Projeto</h2>
 
 1️⃣ Instale as dependências
 
@@ -19,9 +19,9 @@ fastapi dev main.py
 
 A API estará disponível em http://127.0.0.1:8000 e a documentação interativa pode ser acessada em http://127.0.0.1:8000/docs.
 
-📌 Exemplos de Uso da API
+<h2>📌 Exemplos de Uso da API</h2>
 
-1️⃣ Testando um DFA
+<h3>1️⃣ Testando um DFA</h3>
 
 Requisição:
 ```json
@@ -46,7 +46,7 @@ Resposta:
   "diagram_path": "/static/dfa_diagram.png"
 }
 
-2️⃣ Testando um DPDA
+<h3>2️⃣ Testando um DPDA</h3>
 
 Requisição:
 ```json
@@ -81,7 +81,7 @@ Resposta:
   "diagram_path": "/static/dpda_diagram.png"
 }
 
-3️⃣ Testando uma Máquina de Turing
+<h3>3️⃣ Testando uma Máquina de Turing</h3>
 
 Requisição:
 ```json
@@ -124,7 +124,7 @@ Resposta:
 
 ⚠️ Nota: Máquinas de Turing não geram diagramas visuais.
 
-⚠️ Limitações e Pressupostos
+<h2>⚠️ Limitações e Pressupostos</h2>
 
 ✅ O que funciona:
 
