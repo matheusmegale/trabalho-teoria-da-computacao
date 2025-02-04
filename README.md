@@ -31,6 +31,8 @@ Nota: a visualização dos autômatos só será possível em http://127.0.0.1:80
 
 <h2>📌 Exemplos de Uso da API</h2>
 
+Nota: para todas as máquinas, a palavra de entrada a ser verificada é o último elemento do JSON
+
 <h3>1️⃣ Testando um DFA</h3>
 
 DFA que aceita palavras que terminam em um número ímpar de '1's
