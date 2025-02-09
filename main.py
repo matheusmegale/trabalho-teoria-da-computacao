@@ -1,3 +1,6 @@
+# Link para o repositorio:
+# https://github.com/matheusmegale/trabalho-teoria-da-computacao
+
 import os
 from fastapi import FastAPI
 from mt import Mt
